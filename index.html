@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CrystalsCollector</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->	
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>	
+	<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Love+Ya+Like+A+Sister" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+	<h1>Crystals Collector!</h1>
+	
+	<article>
+		<p>You will be given a random number at the start of the game.</p>
+		<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+		<p>You win the game by matching your total score to random number. you lose the game if your total score goes above the random number.</p>
+		<p>The value of each crystal is hidden from you until you click on it.</p>
+		<p>Each time when the game starts, the game will change the values of each crystal.</p>
+		<button>Click to Start</button>
+	</article>
+	
+	<div class="number">
+		<h3 id="random">Match this random number: </h3>
+		<div id="randomNum">x</div>
+	</div>
+	<div class="number">
+		<h3 id="score">Your total score is: </h3>
+		<div id="scoreNum">0</div>
+	</div>	
+		
+	<div id="crystals">
+		<img src="assets/images/garnet.png" id="garnet" class="img-responsive" alt="Garnet icon">
+		<img src="assets/images/emerald.png" id="emerald" class="img-responsive" alt="Emerald icon">
+		<img src="assets/images/diamond.png" id="diamond" class="img-responsive" alt="Diamond icon">
+		<img src="assets/images/citrine.png" id="citrine" class="img-responsive" alt="Citrine icon">
+	</div>
+	
+	<div class="win-lose">
+		<h4 id="wins">Wins: </h4>
+	</div>
+	<div class="win-lose">
+		<h4 id="losses">Losses: </h4>
+	</div>
+</div>	
+</body>
+</html>
